@@ -1,0 +1,3 @@
+[submodule "the-littlest-jupyterhub"]
+	path = the-littlest-jupyterhub
+	url = https://github.com/jupyterhub/the-littlest-jupyterhub

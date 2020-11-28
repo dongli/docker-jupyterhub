@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hub:
+    image: dongli/jupyterhub:1.0
+    restart: always
+    privileged: true
+    ports:
+      - 12000:80
+    volumes:
+      - /delldata3/jupyter:/srv/data
