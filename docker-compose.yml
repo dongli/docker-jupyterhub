@@ -1,7 +1,7 @@
 version: '3'
 services:
   hub:
-    image: dongli/jupyterhub:1.0
+    image: dongli/jupyterhub:1.1
     restart: always
     privileged: true
     ports:

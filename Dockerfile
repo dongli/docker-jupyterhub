@@ -1,5 +1,5 @@
 # Systemd inside a Docker container, for CI only
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV TZ="Asia/Shanghai"
 ENV DEBIAN_FRONTEND="noninteractive"
@@ -23,4 +23,4 @@ RUN systemctl set-default multi-user.target
 
 STOPSIGNAL SIGRTMIN+3
 
-CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
+CMD ["/bin/bash", "-c", "exec /lib/systemd/systemd --log-target=journal 3>&1"]
